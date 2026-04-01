@@ -10,17 +10,17 @@ class Appstore < Formula
       sha256 "ddb17b7339be18f352a081190f2059e5b98e7164396232bc8f5142bc38e93e31"
     else
       url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_amd64.tar.gz"
-      sha256 "a063401e3cc592c8148218457433f12465eb3e8781f1a539cef02db98a7bc20c"
+      sha256 "a63d94236608e3be50a2d84df980e82e9230f08afbf4e9cbcbe56f50c589dd68"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_arm64.tar.gz"
-      sha256 "8a67eb9d4511715fff3db57f67d3b8b8deb913203fde0944e15a07f3fc7aae0a"
+      sha256 "4af108e8d26f7d15377cc4f7e70a3717a25a3f5511ec6e799505e786f73a45cc"
     else
       url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_amd64.tar.gz"
-      sha256 "df4a673fd7ed1f6e389e4ca4ea1cbc4d5c9ae4405d69ae8e27f7dca757ccae9d"
+      sha256 "6057f312be9429d8e3e5fec57755ae513311f6d7ce71e832949e8af4cf81a0cc"
     end
   end
 
