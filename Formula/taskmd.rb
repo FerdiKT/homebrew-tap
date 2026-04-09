@@ -4,13 +4,13 @@
 class Taskmd < Formula
   desc "Agent-friendly Markdown task tracking CLI for local projects"
   homepage "https://github.com/FerdiKT/taskmd-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FerdiKT/taskmd-cli/releases/download/v#{version}/taskmd_#{version}_darwin_arm64.tar.gz"
-      sha256 "296afdd000a4a2aaa8a33fbcae6a105d39d0ff94f79ab3fd6f505dbe22dfa446"
+      url "https://github.com/FerdiKT/taskmd-cli/releases/download/v0.2.0/taskmd_0.2.0_darwin_arm64.tar.gz"
+      sha256 "e30ed8ac0e3246b0ba092e0bca2983e7e07d09a17c57a98b5442ef3bb207aecc"
     else
       url "https://github.com/FerdiKT/taskmd-cli/releases/download/v#{version}/taskmd_#{version}_darwin_amd64.tar.gz"
       sha256 "3745129e098d3a5a6bf56cececf990370ebdca9140ed248152174a5db828e48e"
