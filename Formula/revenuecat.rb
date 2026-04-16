@@ -1,26 +1,26 @@
 class Revenuecat < Formula
   desc "Agent-first CLI for RevenueCat"
   homepage "https://github.com/FerdiKT/revenuecat-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/FerdiKT/revenuecat-cli/releases/download/v#{version}/revenuecat_#{version}_darwin_arm64.tar.gz"
-      sha256 "3080c84504b1932917468fe20b7b253e9f13f20d9aa01b41f97f1534899177fb"
+      sha256 "0858f9ee731b34945c4ba90eb3d5b7366f7c1cb304a4be0fca514a97d3ce2b24"
     else
       url "https://github.com/FerdiKT/revenuecat-cli/releases/download/v#{version}/revenuecat_#{version}_darwin_amd64.tar.gz"
-      sha256 "8b4541aa32ee114c16d1672fef67d57255c25f9e214e671e64689be4201acc4b"
+      sha256 "66034ef9a8e35f3b4360df3a927a8da2cec5cbf51c6f8b0cdf3173db468029de"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FerdiKT/revenuecat-cli/releases/download/v#{version}/revenuecat_#{version}_linux_arm64.tar.gz"
-      sha256 "3c6c1f567ba35e6909f3ff0dc5ec928b9a179317c5d506c539ff604e4901f65e"
+      sha256 "95cb5406002aabac222dc0676b75624b95ff4d963a446c44b7db78fa3233f81e"
     else
       url "https://github.com/FerdiKT/revenuecat-cli/releases/download/v#{version}/revenuecat_#{version}_linux_amd64.tar.gz"
-      sha256 "c55175972ecdccedf92545c6c1b0a451c7ae77b48bbab52f6cc0d6d6721714d9"
+      sha256 "5f05123bd5224e52fd32ebf95ce58ae09e0d77422a119669a0c6b318fb3719cc"
     end
   end
 
