@@ -1,26 +1,26 @@
 class Sensortower < Formula
   desc "JSON-first CLI for Sensor Tower iOS market data"
   homepage "https://github.com/FerdiKT/sensortower-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/FerdiKT/sensortower-cli/releases/download/v#{version}/sensortower_#{version}_darwin_arm64.tar.gz"
-      sha256 "230a4b44226d4a5040c44c37afada92f4225f68e119574ba273821bde42e440d"
+      sha256 "1cca702b48c05cc5b2f0e581d21db39be13134fab2dbe8155f5d097fdf57e44f"
     else
       url "https://github.com/FerdiKT/sensortower-cli/releases/download/v#{version}/sensortower_#{version}_darwin_amd64.tar.gz"
-      sha256 "ec47f61d1a23f04bb7b9d028fe4709fc332baa2fba571b21c5983d837786d206"
+      sha256 "48f5fc0e95c3bc8987afb8d6c4e1b970b68bd4225cac8af84f87ca82092cc90a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/FerdiKT/sensortower-cli/releases/download/v#{version}/sensortower_#{version}_linux_arm64.tar.gz"
-      sha256 "bf9192480277fca2f0e9f5d46deeee8bf317d09e0fafcf40d9486dbadf232650"
+      sha256 "e55fccb1c317a4586fcfa7068faac3acc4c072d6d05756c3e61f97be91b89f22"
     else
       url "https://github.com/FerdiKT/sensortower-cli/releases/download/v#{version}/sensortower_#{version}_linux_amd64.tar.gz"
-      sha256 "2c858d5842bdc45957326447055a8801eeafa0d9b4f600bcc6367bde0f91ec06"
+      sha256 "77b2f84bbb8d39bcc6650a8ac52f4a7dae2f68bec2fc8649f232b4222aacdf83"
     end
   end
 
