@@ -1,13 +1,13 @@
 class Appleads < Formula
   desc "Production-ready CLI for Apple Search Ads API"
   homepage "https://github.com/FerdiKT/appleads-cli"
-  version "1.1.2"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FerdiKT/appleads-cli/releases/download/v1.1.2/appleads_1.1.2_darwin_arm64.tar.gz"
-      sha256 "35296c2dcbd6bc11209ba871353269f88f1a2b159c01ec358e2f4a7fbccf97e9"
+      url "https://github.com/FerdiKT/appleads-cli/releases/download/v1.2.0/appleads_1.2.0_darwin_arm64.tar.gz"
+      sha256 "ca9ec7be4210767a39c1b4acbd1920efd32a9af0d375f7407e16fc868cdce58c"
     else
       url "https://github.com/FerdiKT/appleads-cli/releases/download/v#{version}/appleads_#{version}_darwin_amd64.tar.gz"
       sha256 "d3f9b5063e8f1d7fd360182440a98b7a70ea6ca0d4d3b1f4316d3f1f358a1f8e"
