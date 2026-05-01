@@ -1,26 +1,26 @@
 class Appstore < Formula
   desc "CLI for direct App Store API search/hints/app-details"
-  homepage "https://github.com/FerdiKT/appstore-cli"
+  homepage "https://github.com/ferdikt/appstore-cli"
   version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/FerdiKT/appstore-cli/releases/download/v0.1.3/appstore_0.1.3_darwin_arm64.tar.gz"
-      sha256 "11f89bdc5c9eb87c42ea398a86aa05c3bcd10876b5f1abb91aa2e3d3ba8fc689"
+      url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_arm64.tar.gz"
+      sha256 "a026348f9c5dd34da0a048e194553e1777b724478146234b5d383907eee412af"
     else
-      url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_amd64.tar.gz"
-      sha256 "a63d94236608e3be50a2d84df980e82e9230f08afbf4e9cbcbe56f50c589dd68"
+      url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_amd64.tar.gz"
+      sha256 "5a7732f0fadfb38710f9a08581210ee908bbf041200cd9112303af17693e154c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_arm64.tar.gz"
-      sha256 "4af108e8d26f7d15377cc4f7e70a3717a25a3f5511ec6e799505e786f73a45cc"
+      url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_arm64.tar.gz"
+      sha256 "19b82e91f642be43725c7b05777e3e61b0d569cce06e2fe656c3fb8fbeca5008"
     else
-      url "https://github.com/FerdiKT/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_amd64.tar.gz"
-      sha256 "6057f312be9429d8e3e5fec57755ae513311f6d7ce71e832949e8af4cf81a0cc"
+      url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_linux_amd64.tar.gz"
+      sha256 "5c540156c83c69d237927a56457bbb49dbc10c10ce9ca7b5881c889df24228f2"
     end
   end
 
