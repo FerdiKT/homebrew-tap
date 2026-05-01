@@ -1,13 +1,13 @@
 class Appstore < Formula
   desc "CLI for direct App Store API search/hints/app-details"
   homepage "https://github.com/ferdikt/appstore-cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_arm64.tar.gz"
-      sha256 "a026348f9c5dd34da0a048e194553e1777b724478146234b5d383907eee412af"
+      url "https://github.com/ferdikt/appstore-cli/releases/download/v0.1.4/appstore_0.1.4_darwin_arm64.tar.gz"
+      sha256 "f99f04eee10041311cd21b8e7b38cf61aa591d98d8914c17827910cfe5e4a028"
     else
       url "https://github.com/ferdikt/appstore-cli/releases/download/v#{version}/appstore_#{version}_darwin_amd64.tar.gz"
       sha256 "5a7732f0fadfb38710f9a08581210ee908bbf041200cd9112303af17693e154c"
